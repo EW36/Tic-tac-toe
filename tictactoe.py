@@ -80,57 +80,24 @@ def displayWinner(grid, position):
         print("Player wins!")
     else:
         print("CPU wins :-(")
-
+        
     input("Press enter to exit")
     exit()
+
 
 # MAIN PROGRAM
 
 grid = ["?"]*9
+end = False
 
 # MAIN PROGRAM
 # uncomment the lines below and repeat them as many times as you need to
 
-displayGrid(grid)
-grid = getChoice(grid)
-checkWinner(grid)
+while end == False:
+    displayGrid(grid)
+    grid = getChoice(grid)
+    checkWinner(grid)
 
-displayGrid(grid)
-grid = cpuChoice(grid)
-checkWinner(grid)
-
-displayGrid(grid)
-grid = getChoice(grid)
-checkWinner(grid)
-
-displayGrid(grid)
-grid = cpuChoice(grid)
-checkWinner(grid)
-
-displayGrid(grid)
-grid = getChoice(grid)
-checkWinner(grid)
-
-displayGrid(grid)
-grid = cpuChoice(grid)
-checkWinner(grid)
-
-displayGrid(grid)
-grid = getChoice(grid)
-checkWinner(grid)
-
-displayGrid(grid)
-grid = cpuChoice(grid)
-checkWinner(grid)
-
-displayGrid(grid)
-grid = getChoice(grid)
-checkWinner(grid)
-
-displayGrid(grid)
-grid = cpuChoice(grid)
-checkWinner(grid)
-
-displayGrid(grid)
-grid = getChoice(grid)
-checkWinner(grid)
+    displayGrid(grid)
+    grid = cpuChoice(grid)
+    checkWinner(grid)
